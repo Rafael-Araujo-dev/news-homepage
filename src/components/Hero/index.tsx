@@ -4,7 +4,8 @@ import Link from 'next/link'
 import {
     Container,
     Wrapper,
-    Featured
+    Featured,
+    Aside
 } from './styles'
 
 const Hero = () => {
@@ -26,6 +27,25 @@ const Hero = () => {
                         </div>
                     </div>
                 </Featured>
+
+                <Aside>
+                    <h4>New</h4>
+
+                    <div>
+                        <h5>Hydrogen VS Eletric Cars</h5>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h5>The Downsides of AI Artistry</h5>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h5>IS VC Funding Drying Up?</h5>
+                        <p>Private funding by VC firms is down 50% YOY. We take look at what that means.</p>
+                    </div>
+                </Aside>
 
             </Wrapper>
         </Container>

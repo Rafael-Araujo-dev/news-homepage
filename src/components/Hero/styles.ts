@@ -8,12 +8,17 @@ export const Container = styled.section`
 export const Wrapper = styled.div`
     max-width: 1240px;
     margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+
+    @media (min-width: 1024px) {
+        grid-template-columns: .68fr .29fr;
+    }
 `
 
 export const Featured = styled.div`
-    @media (min-width: 1024px) {
-        width: 70%;
-    }
     img {
         position: relative !important;
         object-fit: contain !important;
@@ -34,17 +39,17 @@ export const Featured = styled.div`
 
         h3 {
             font-family: 'Inter', sans-serif;
-            font-size: 4.5rem;
+            font-size: 4.3rem;
             font-weight: 700;
             margin: 0;
-            line-height: 4.25rem;
+            line-height: 4rem;
         }
 
         p {
             color: ${colors.neutral700};
             font-family: 'Inter', sans-serif;
-            font-size: 1.25rem;
-            line-height: 2.2rem;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
             margin: 0 0 40px 0;
         }
 
@@ -82,5 +87,45 @@ export const Featured = styled.div`
             }
         }
     }
+`
 
+export const Aside = styled.aside`
+    margin-top: 60px;
+    background-color: ${colors.neutral900};
+    padding: 30px 20px;
+    @media (min-width: 1024px) {
+        margin-top: 0;
+    }
+
+    h4 {
+        margin: 0;
+        color: ${colors.primary300};
+        font-family: 'Inter', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    div {
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        &:hover {
+                h5 { color: ${colors.primary300}; }
+        }
+        h5 {
+            color: ${colors.neutral100};
+            font-size: 1.25rem;
+            margin-bottom: 0;
+
+            transition: color .2s ease-out;
+        }
+        p {
+            color: ${colors.neutral300};
+            font-size: 1.1rem;
+            line-height: 2rem;
+            margin: 10px 0 0 0;
+        }
+    }
+
+    hr {
+        margin: 30px 0;
+    }
 `
