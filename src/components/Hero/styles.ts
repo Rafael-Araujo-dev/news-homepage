@@ -2,7 +2,10 @@ import styled from 'styled-components'
 import colors from '@styles/colors.json'
 
 export const Container = styled.section`
-    padding: 40px 5%;
+    padding: 0px 5%;
+    @media (min-width: 768px) {
+        padding: 40px 5%;
+    }
 `
 
 export const Wrapper = styled.div`
