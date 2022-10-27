@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 ![Lighthouse](https://user-images.githubusercontent.com/90640158/198354609-976ab314-18c0-4cc7-ba08-fb03619791d8.png)
-![Desktop](/public/desktop.jpg)
-![Tablet](/public/tablet.jpg)
-![Mobile](/public/mobile.jpg)
+![Desktop](https://user-images.githubusercontent.com/90640158/198374896-11a4741b-918c-46d5-b037-7c95de13aa32.jpeg)
+![Tablet](https://user-images.githubusercontent.com/90640158/198374700-7100c213-d57f-4414-80a6-c6ca4c1bcdb1.jpeg)
+![Mobile](https://user-images.githubusercontent.com/90640158/198374461-cd7576f6-4ea8-4bad-8f77-9fe1b2328390.jpeg)
 
 ### Links
 
