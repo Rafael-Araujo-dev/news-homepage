@@ -28,11 +28,13 @@ const Header = () => {
             <Wrapper>
                 
                 <Logo>
+                    <Link href='#' passHref>
                     <Image
                         src={props.logo.src}
                         alt={props.logo.alt}
                         fill
                     />
+                    </Link>
                 </Logo>
 
                 {props.navLinks.length > 0 &&
