@@ -86,6 +86,10 @@ export const MenuMobile = styled.div`
         transform: translateX(100%);
         background-color: rgba(0,0,0, 0);
     }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 `
 
 export const MenuWrapper = styled.div`
