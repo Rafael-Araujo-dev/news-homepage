@@ -71,6 +71,7 @@ export const MenuOpen = styled.div`
 `
 
 export const MenuMobile = styled.div`
+    z-index: 100;
     position: fixed;
     height: 100vh;
     width: 100vw;
