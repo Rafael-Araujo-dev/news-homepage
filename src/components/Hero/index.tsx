@@ -31,20 +31,26 @@ const Hero = () => {
                 <Latest>
                     <h4>New</h4>
 
-                    <div>
-                        <h5>Hydrogen VS Eletric Cars</h5>
-                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                    </div>
+                    <Link href='#hydrogen-vs-eletric-cars' passHref>
+                        <div>
+                            <h5>Hydrogen VS Eletric Cars</h5>
+                            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                        </div>
+                    </Link>
                     <hr />
-                    <div>
-                        <h5>The Downsides of AI Artistry</h5>
-                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                    </div>
+                    <Link href='#the-downsides-of-ai-artistry' passHref>
+                        <div>
+                            <h5>The Downsides of AI Artistry</h5>
+                            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                        </div>
+                    </Link>
                     <hr />
-                    <div>
-                        <h5>IS VC Funding Drying Up?</h5>
-                        <p>Private funding by VC firms is down 50% YOY. We take look at what that means.</p>
-                    </div>
+                    <Link href='#is-vc-funding-drying-up?' passHref>
+                        <div>
+                            <h5>IS VC Funding Drying Up?</h5>
+                            <p>Private funding by VC firms is down 50% YOY. We take look at what that means.</p>
+                        </div>
+                    </Link>
                 </Latest>
 
             </Wrapper>
