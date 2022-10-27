@@ -1,14 +1,28 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
+
+import MenuSVG from '@public/icon-menu.svg'
+import MenuCloseSVG from '@public/icon-menu-close.svg'
 
 import {
     Container,
     Wrapper,
     Logo,
-    NavDesktop
+    NavDesktop,
+    MenuOpen,
+    MenuMobile,
+    MenuWrapper,
+    MenuClose
 } from './styles'
 
 const Header = () => {
+    const [isMenuActive, setIsMenuActive] = useState(false)
+
+    const handleMenuMobile = () => {
+        isMenuActive ? setIsMenuActive(false) : setIsMenuActive(true)
+    }
+
     return (
         <Container>
             <Wrapper>
@@ -21,9 +35,43 @@ const Header = () => {
                     />
                 </Logo>
 
-                {
-                    props.navLinks.length > 0 &&
-                    <NavDesktop>
+                {props.navLinks.length > 0 &&
+                    <>
+                        <NavDesktop>
+                            {props.navLinks.map(
+                                    (link, index) => (
+                                        <li key={index}>
+                                            <Link href={link.url} passHref>{link.text}</Link>
+                                        </li>
+                                    )
+                            )}
+                        </NavDesktop>
+
+                        <MenuOpen
+                            onClick={handleMenuMobile}
+                        >
+                            <Image
+                                src={MenuSVG.src}
+                                alt='Ícone menu'
+                                fill
+                            />
+                        </MenuOpen>
+                    </>
+                }
+            </Wrapper>
+
+            <MenuMobile className={isMenuActive ? 'open' : 'closed'}>
+                <MenuWrapper className={isMenuActive ? 'open' : 'closed'}>
+                    <MenuClose
+                        onClick={handleMenuMobile}
+                    >
+                        <Image
+                            src={MenuCloseSVG.src}
+                            alt='Ícone fechar menu'
+                            fill
+                        />
+                    </MenuClose>
+                    <ul>
                         {props.navLinks.map(
                                 (link, index) => (
                                     <li key={index}>
@@ -31,10 +79,9 @@ const Header = () => {
                                     </li>
                                 )
                         )}
-                    </NavDesktop>
-                }
-
-            </Wrapper>
+                    </ul>
+                </MenuWrapper>
+            </MenuMobile>
         </Container>
     )
 }
