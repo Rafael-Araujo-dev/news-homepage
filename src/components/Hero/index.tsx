@@ -15,8 +15,8 @@ const Hero = () => {
 
                 <Featured>
                     <div>
-                        <Image className='desk' src="/image-web-3-desktop.jpg" fill alt="" />
-                        <Image className='mobile' src="/image-web-3-mobile.jpg" fill alt="" />
+                        <Image className='desk' src="/image-web-3-desktop.jpg" fill alt="" priority/>
+                        <Image className='mobile' src="/image-web-3-mobile.jpg" fill alt="" priority/>
                     </div>
 
                     <div className='content'>
