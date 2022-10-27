@@ -5,7 +5,7 @@ import {
     Container,
     Wrapper,
     Featured,
-    Aside
+    Latest
 } from './styles'
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
                     </div>
                 </Featured>
 
-                <Aside>
+                <Latest>
                     <h4>New</h4>
 
                     <div>
@@ -45,7 +45,7 @@ const Hero = () => {
                         <h5>IS VC Funding Drying Up?</h5>
                         <p>Private funding by VC firms is down 50% YOY. We take look at what that means.</p>
                     </div>
-                </Aside>
+                </Latest>
 
             </Wrapper>
         </Container>

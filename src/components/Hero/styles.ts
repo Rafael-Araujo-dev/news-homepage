@@ -89,7 +89,7 @@ export const Featured = styled.div`
     }
 `
 
-export const Aside = styled.aside`
+export const Latest = styled.aside`
     margin-top: 60px;
     background-color: ${colors.neutral900};
     padding: 30px 20px;
