@@ -23,7 +23,7 @@ Users should be able to:
 - **Bonus**: Toggle the mobile menu (requires some JavaScript)
 
 ### Screenshot
-
+![Lighthouse](https://user-images.githubusercontent.com/90640158/198354609-976ab314-18c0-4cc7-ba08-fb03619791d8.png)
 ![Desktop](/public/desktop.jpg)
 ![Tablet](/public/tablet.jpg)
 ![Mobile](/public/mobile.jpg)
