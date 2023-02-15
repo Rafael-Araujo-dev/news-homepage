@@ -9,7 +9,7 @@ import TagManager from "react-gtm-module";
 export default function App({ Component, pageProps }: AppProps) {
 
   const tagManagerArgs = {
-    gtmId: "GTM-MRV5S6C",
+    gtmId: "G-GKVQS2LH5B",
   };
 
   if (process.browser) {
