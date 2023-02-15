@@ -58,6 +58,17 @@ class MyDocument extends Document {
             `}
           </script>
 
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKVQS2LH5B"></script>
+          <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-GKVQS2LH5B');
+            `}
+          </script>
+
         </Head>
         <body id="body">
           <Main />
