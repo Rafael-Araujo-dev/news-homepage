@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
 
       {
-        process.env.NODE_ENV !== 'production' ?
+        process.env.NEXT_PUBLIC_ENV !== 'production' ?
             <div style={{padding: 20, backgroundColor: "#e9762a", color: "#000", display: "flex", justifyContent: "center", alignItems: "center", textTransform: "uppercase", fontFamily: "sans-serif", fontWeight: 700, letterSpacing: 2}}>
-                {process.env.NODE_ENV}
+                {process.env.NEXT_PUBLIC_ENV}
             </div>
             : <></>
       }
